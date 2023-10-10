@@ -29,32 +29,32 @@ function ExpenseTracker(props) {
 
   return (
     <div className="py-8">
-      <div className="flex px-40 justify-between">
+      <div className="px-5 flex md:px-40 justify-between">
         <div className="flex flex-col">
           <div>
-            <h1 className="text-3xl font-bold mb-4">
+            <h1 className="text-xl md:text-3xl font-bold mb-4">
               <span className="text-gray-500">{name}</span>`s Expense Tracker
             </h1>
             <div className="mb-4 flex">
-              <h3 className="text-xl font-medium">your balance : </h3>
-              <h2 className="text-2xl ml-2 font-medium">
+              <h3 className="text-lg md:text-xl font-medium">your balance : </h3>
+              <h2 className="text-xl md:text-2xl ml-2 font-medium">
                 {balance >= 0 ? `$ ${balance}` : `-$ ${balance * -1}`}
               </h2>
             </div>
             <div>
               <div className="mb-4 flex">
-                <h4 className="text-xl font-medium">income :</h4>
-                <p className="text-2xl ml-2 font-medium">${totalIncome}</p>
+                <h4 className="text-lg md:text-xl font-medium">income :</h4>
+                <p className="text-xl md:text-2xl ml-2 font-medium">${totalIncome}</p>
               </div>
               <div className="mb-4 flex">
-                <h4 className="text-xl font-medium">expense: </h4>
-                <p className="text-2xl ml-2 font-medium">${totalExpense}</p>
+                <h4 className="text-lg md:text-xl font-medium">expense: </h4>
+                <p className="text-xl md:text-2xl ml-2 font-medium">${totalExpense}</p>
               </div>
             </div>
           </div>
           <form
             onSubmit={onSubmit}
-            className="border-2 flex flex-col w-1/2 p-2 rounded-md"
+            className="w-full border-2 flex flex-col md:w-1/2 p-2 rounded-md"
           >
             <input
               className="border  rounded-md p-1 mb-2"

@@ -2,6 +2,7 @@ import './App.css';
 import AppRoot from './app-root/AppRoot';
 import Auth from './auth/Auth';
 import LoginWithGoogle from './auth/LoginWithGoogle';
+import LoginWithFaceBook from './auth/LoginWithFaceBook';
 import ChatApp from './chat-app/ChatApp';
 import CRUD from './crud/CRUD';
 import Root from './expense/pages/Root';
@@ -17,6 +18,7 @@ function App() {
      {/* <UploadImage/> */}
      {/* <ChatApp/> */}
      <Root/>
+     {/* <LoginWithFaceBook/> */}
     </div>
   );
 }
